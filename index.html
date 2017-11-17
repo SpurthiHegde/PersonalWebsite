@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<nav id="grad" class="navbar navbar-expand-md navbar-light">
+		<nav  id="grad" class="navbar navbar-expand-md navbar-light">
 			<a class="navbar-brand mb-0 h1" href="#"><img src="./img/logo_60_33.jpg"></a>
 		    <button id="button-focus-border-color" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -37,19 +37,34 @@
 
 	<div class="container">
 		<!-- The Intro & About Me part goes in the main section -->
-		<main>
-			<section>
-				<figure>
-					Profile picture in here..
-				</figure>
-				<article>
-					Quick Info in here..
-				</article>			
+		<main class="row">
+			<section class="col-md-6 right-shift bottom-shift">
+				<!-- Inner Div added to allow spacing between the 2 equally divided grid -->
+				<!-- Box class used to handle the flex behaviour -->
+				<div class="col-md-12 box">
+					<!-- Responsive images to be picked on DPI -->
+					<figure>
+						<img src="./img/spurthi_250.jpg" 
+	     		 		srcset="./img/spurthi_250.jpg 1x, 
+	     		 				./img/spurthi_300.jpg 1.5x," alt="profile picture"> 
+					</figure>
+					<article id="summary">
+						<ul id="summary-info">
+				          <li><i class="fa fa-female" aria-hidden="true"></i> Spurthi Hegde</li>
+				          <li><i class="fa fa-phone" aria-hidden="true"></i> +971-50-8787952</li>
+				          <li><i class="fa fa-envelope-o" aria-hidden="true"></i> hegde.spurthi@gmail.com</li>
+				          <li><i class="fa fa-home" aria-hidden="true"></i> Dubai Silicon Oasis, UAE.</li>
+				          <li><i class="fa fa-calendar" aria-hidden="true"></i> 29/10/1991</li>
+				        </ul>
+					</article>
+				</div>			
 			</section>
-			<section>
+			<section class="col-md-6 left-shift top-shift">
+				<div class="col-md-12 box">
 				<p>
 				Summary /About Me in here..
 				</p>
+				</div>
 			</section>
 		</main>
 		<!-- The projects completed space in the below section. Each article allocated for a project -->
