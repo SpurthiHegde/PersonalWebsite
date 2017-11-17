@@ -73,14 +73,14 @@ figure {
 }
 
 /*** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***/
-@media screen and (max-width: 503px) and (min-width: 380px){
+@media screen and (max-width: 515px) and (min-width: 380px){
 	#summary-info {
 		text-align: justify;
 		padding-left: 4rem;
 	}
 }
 
-@media screen and (min-width: 504px) {
+@media screen and (min-width: 516px) {
 	.box {
 		display: flex;
 		flex-wrap: wrap;
@@ -147,7 +147,7 @@ figure {
 	.box {
 		padding-left: 3rem;
 	}
-	
+
 	figure {
 		margin-right: 1px;
 	}
