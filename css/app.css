@@ -1,5 +1,5 @@
 /*** Site Colors ***
-
+Eastern Blue: #17a2b8;  Website common color scheme
 pale-grey: #fafbfc
 pale-grey-two: #dbe2e8
 dark: #2e3d49
@@ -9,6 +9,22 @@ aquamarine: #02ccba
 */
 
 /*** Header Styling ***/
+/*** Navbar gradient Color   ***/
+#grad {
+  background: #17a2b8; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(23,162,184,1)); /*Standard*/
+}
+/*** Navbar header font from google-fonts   ***/
+header {
+	font-family: 'Alegreya Sans', sans-serif;
+}
+/*** Navbar toggle button boder C=color changed  ***/
+button#button-focus-border-color:focus {
+    outline: 5px auto #17a2b8;
+}
 
 /*** Project article Styling ***/
 
