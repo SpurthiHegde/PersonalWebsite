@@ -72,23 +72,28 @@ figure {
     text-align: justify;
 }
 
+/*** About Me Section Styles ***/
+#section-height {
+	height: 100%;
+	text-align: justify;
+}
 /*** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***/
-@media screen and (max-width: 515px) and (min-width: 380px){
+@media screen and (max-width: 528px) and (min-width: 380px){
 	#summary-info {
 		text-align: justify;
 		padding-left: 4rem;
 	}
 }
 
-@media screen and (min-width: 516px) {
+@media screen and (min-width: 529px) {
 	.box {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	#summary {
+/*	#summary {
 		margin-left: 0;
-	}
+	}*/
 
 	#summary-info {
 		line-height: 2;
@@ -132,6 +137,12 @@ figure {
 @media screen and (min-width: 996px) {
 	.box {
 		display: flex;
+		flex-wrap: wrap;
+		height: 100%		/**The div did not take the complete height***/
+	}
+
+	img {
+		padding-top: 1rem;		/**After setting the box height to 100%, img was not aligned, hence padding-top provided***/
 	}
 
 	#summary {
@@ -148,8 +159,16 @@ figure {
 		padding-left: 3rem;
 	}
 
+	img {
+    	padding-top: 0.3rem;
+	}
+
 	figure {
 		margin-right: 1px;
+	}
+
+	#section-height {
+		padding-left: 1rem;
 	}
 }
 
