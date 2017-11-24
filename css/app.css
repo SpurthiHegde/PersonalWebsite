@@ -26,7 +26,7 @@ aquamarine: #02ccba
 
 /*** Navbar toggle button boder C=color changed  ***/
 button#button-focus-border-color:focus {
-    outline: 5px auto #17a2b8;
+    outline: 5px auto #868e96;		
 }
 
 /*** Main Section Styling ***/
