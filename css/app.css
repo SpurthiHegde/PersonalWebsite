@@ -31,8 +31,8 @@ button#button-focus-border-color:focus {
 
 /*** Main Section Styling ***/
 main {
-	padding: 1.5rem;
-}
+	padding: 1rem 0 1rem 0;		/*Only bottom & top padding provided*/
+}	
 
 .box {
     /*outline: 5px auto #17a2b8;*/
