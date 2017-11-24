@@ -56,6 +56,10 @@ figure {
 	margin: 0;
 }
 
+#profile-pic {
+	height: 35vh;
+}
+
 /*Adding negative margins to override the parent padding of 15px*/
 #summary {
 	margin-left: -15px;
@@ -75,6 +79,7 @@ figure {
     padding: 1rem 0rem 1rem 1rem;
     text-align: justify;
     font-family: 'David Libre', serif;
+    font-size: 0.9rem;  /*Added to reduce the font in mobile mode*/x`
 }
 
 /*** About Me Section Styles ***/
@@ -82,6 +87,8 @@ figure {
 	height: 100%;
 	text-align: justify;
 	font-family: 'David Libre', serif;
+	padding: 5px;	/*Added to reduce the padding in mobile mode*/
+    font-size: 0.9rem;		/*Added to reduce the font in mobile mode*/
 }
 
 /***Work Expirience Section styles***/
