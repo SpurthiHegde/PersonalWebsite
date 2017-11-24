@@ -10,16 +10,17 @@ aquamarine: #02ccba
 
 /*** Header Styling ***/
 /*** Navbar gradient Color   ***/
-#grad {
+.grad {
   	background: #17a2b8; /* For browsers that do not support gradients */
+  	background: #868e96;
   	background: -webkit-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Safari 5.1-6*/
   	background: -o-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Opera 11.1-12*/
   	background: -moz-linear-gradient(left,rgba(255,255,255,1), rgba(23,162,184,1)); /*Fx 3.6-15*/
-  	background: linear-gradient(to left, rgba(255,255,255,1), rgba(23,162,184,1)); /*Standard*/
+  	background: linear-gradient(to left, rgba(255,255,255,1), rgba(134,142,150,1)); /*Standard*/
 }
 
 /*** Navbar header font from google-fonts   ***/
-header {
+.headerfont {
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -37,7 +38,7 @@ main {
     /*outline: 5px auto #17a2b8;*/
     -moz-box-shadow: 1px 1px 3px 1px #17a2b8;
   	-webkit-box-shadow: 1px 1px 3px 1px #17a2b8;
-  	box-shadow: 1px 1px 3px 1px #17a2b8;
+  	box-shadow: 1px 1px 3px 1px orange ;
 }
 
 /*To get the spacing between 2 sections in the main*/
@@ -61,8 +62,11 @@ figure {
     margin-right: -15px;
     text-align: center;
     /*background-color: rgba(23, 162, 184, 0.8);*/
-    background-color: #17a2b8;
-    color: #f8f9fa;
+    /*background-color: orange;*/
+    background: linear-gradient(to left, rgba(255,255,255,1), orange); /*Standard*/
+    /*color: #f8f9fa;*/
+    color: black;
+
 }
 
 #summary-info {
@@ -70,12 +74,55 @@ figure {
     margin: 0;
     padding: 1rem 0rem 1rem 1rem;
     text-align: justify;
+    font-family: 'David Libre', serif;
 }
 
 /*** About Me Section Styles ***/
 #section-height {
 	height: 100%;
 	text-align: justify;
+	font-family: 'David Libre', serif;
+}
+
+/***Work Expirience Section styles***/
+
+#work-experience {
+	background-color: yellow;
+	text-align: center;
+	padding-top: 0.5rem;
+}
+
+#iner-container {
+	display: flex;
+    width: 100%;
+    padding: 1rem;
+}						/*Inner container height will be set based on the svg*/
+
+#exp-timeline-animation {
+	width: 20%;
+	/*outline: solid 1px black;*/
+	text-align: right;			/*Align the vertical timeline to right with right padding of 1 rem*/
+    padding-right: 1rem;
+}
+
+#exp-details {
+	width: 80%;
+    /*outline: solid 1px black;*/
+    text-align: left;			/*Align the Experience details content to left with right padding of 1 rem*/
+    padding-left: 1rem;
+}
+
+#timeline {
+	stroke: orange;
+	stroke-width: 10;
+	stroke-dasharray: 1,1;
+}
+
+.roles {
+	list-style-type: square;
+    width: 85%;
+    text-align: justify;
+    font-family: 'David Libre', serif;
 }
 /*** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***/
 @media screen and (max-width: 528px) and (min-width: 380px){

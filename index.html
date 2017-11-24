@@ -8,11 +8,11 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/app.css">
   	<script src="https://use.fontawesome.com/745c6bd7f0.js"></script>
-  	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:700" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=David+Libre|Alegreya+Sans:700" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<nav  id="grad" class="navbar navbar-expand-md navbar-light">
+	<header class="headerfont">
+		<nav class=" grad navbar navbar-expand-md navbar-light">
 			<a class="navbar-brand mb-0 h1" href="#"><img src="./img/logo_60_33.jpg"></a>
 		    <button id="button-focus-border-color" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,10 @@
 		    <div class="collapse navbar-collapse" id="navbarNav">
 		      <ul class="navbar-nav">
 		        <li class="nav-item active">
-		          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+		          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">EXPERIENCE</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="#">PROJECTS</a>
@@ -66,25 +69,75 @@
 				</div>
 			</section>
 		</main>
-		<!-- The projects completed space in the below section. Each article allocated for a project -->
-		<section>
-			<article>
-				article 1
-			</article>
-			<article>
-				article 2
-			</article>
-			<article>
-				article 3
-			</article>
-			<article>
-				article 4
-			</article>
-			<article>
-				article 5
-			</article>
-		</section>
 	</div>
+	<!-- Container for header ends here -->
+
+	<!-- Experience section Added-->
+	<section id="work-experience" class="grad">
+		<h3 class="headerfont">Work Experience</h3>
+		<section id="iner-container">
+			<div id="exp-timeline-animation">
+				<svg width="20" height="500">
+				    <line x1="10" y1="10" x2="10" y2="500" id="timeline" />
+				    <circle r="10" cx="10" cy="10" fill="orange" />
+				    <circle id="orange-circle" r="10" cx="10" cy="10" fill="orange" />				    
+				    <animate 
+				             xlink:href="#orange-circle"
+				             attributeName="cy"
+				             from="0"
+				             to="350" 
+				             additive="sum"
+				             accumulate="sum"
+				             repeatCount="1"
+				             calcMode="spline"
+				             keyTimes="0;1"
+				             keySplines="0.7 0 1 1"
+				             dur="2s"
+				             begin="0s"
+				             fill="freeze" />
+				</svg>
+			</div>
+			<div id="exp-details">
+				<h6>Implementation Engineer &amp programmer</h6>
+				<h6>2016 - Present</h6>	
+				<h6>Oasys Information Technology</h6>
+				<ul class="roles">
+					<li>In a nutshell this profile allows me to carry on an end to end implementation of OASYS’s in house HRMS solutions for the hospitality industry. Right from requirement gathering to data migration assistance, followed by application configuration &amp enhancements along with onsite client visits, if required.</li>
+					<li>Functionally, I have grown to understand the HR process from budgeting &amp recruitment, hiring, onboarding to workforce management, benefits administartion, payroll &amp post payroll processes like Journal calculations &amp Bank file generations.</li>
+					<li>Technically, I have enhanced my skills on <em><strong>SQL, HTML, CSS, Javascript, Jquery, powerbuilder, networking, database maintenance  &amp IIS Web hosting techniques</strong></em></li>
+				</ul>
+				<br>
+				<br>
+				<h6>Techno Functional Consultant - SAP HR</h6>
+				<h6>2013 - 2015</h6>	
+				<h6>ADP India Private Ltd</h6>
+				<ul class="roles">
+					<li>Being my first job after graduating from college, this tenure definitely taught me the right work etiquettes required at any organisation. My role involved designing functioanl specs &amp developing third party vendor Interfaces during payroll implementations.</li>
+					<li>I was also assisting in the configuration &amp testing of PA, OM &amp Payroll sub modules as a part of HR - Payroll implementation for some of the Fortune 500 clients, based out of North America.</li> 
+					<li>Along with my <em><strong>SAP HR &amp HR-ABAP </strong></em>technicalities, this proflile has also groomed me to be a collaborative communicator</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+	<!-- The projects completed space in the below section. Each article allocated for a project -->
+	<section>
+		<article>
+			article 1
+		</article>
+		<article>
+			article 2
+		</article>
+		<article>
+			article 3
+		</article>
+		<article>
+			article 4
+		</article>
+		<article>
+			article 5
+		</article>
+	</section>
+	
 	<!-- Main content ends here -->
 
 	<footer>
