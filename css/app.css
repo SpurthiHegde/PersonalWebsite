@@ -247,6 +247,36 @@ figure {
   }
 }
 
+/*** Conatct section Styles ***/
+.contact {
+	    margin-bottom: 4rem;
+}
+
+.grad-contact {
+	background: linear-gradient(to right, rgba(255,255,255,0), orange);
+
+}
+form {
+	font-family: 'Alegreya Sans', sans-serif;
+	color: black;
+	box-shadow: 3px 3px 5px #888888;
+    border: 0.5px solid orange;
+    /*margin: 0 4rem 2rem 4rem;*/
+    margin: 0 1rem 0 1rem;
+}
+
+label {
+	margin-bottom: 0;
+}
+
+
+
+#contactme {
+	text-align: center; 
+	margin-top: 2rem;	
+}
+
+
 
 /*** Footer Styles ***/
 footer {
@@ -281,6 +311,15 @@ footer p {
 }
 
 @media screen and (min-width: 529px) {
+	.form-group {
+    margin: 1rem 0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+	.grad-contact {
+		margin: 0 4rem;
+	}
+
 	#inner-projects {
 		display: flex;
 		flex-wrap: wrap;
@@ -330,6 +369,9 @@ footer p {
 
 /*Media query to fix the spacing when greater tha 767px width & maintain the figure to summary ratio*/
 @media screen and (min-width: 768px) {
+	.grad-contact {
+		margin: 0 8rem;
+	}
 /*			.card-image {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -389,6 +431,9 @@ footer p {
 }
 
 @media screen and (min-width: 996px) {
+		.grad-contact {
+		margin: 0 12rem;
+	}
 
 	#inner-projects {
     width: 60%;
@@ -418,6 +463,9 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+		.grad-contact {
+		margin: 0 16rem;
+	}
 	.box {
 		padding-left: 0rem;		/*changed to 0 above 1200px*/
 	}
