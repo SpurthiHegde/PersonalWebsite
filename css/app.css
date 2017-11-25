@@ -246,6 +246,24 @@ figure {
     /* opacity: 1; */
   }
 }
+
+
+/*** Footer Styles ***/
+footer {
+	text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+	margin-top: 1rem;
+}
+.inline {
+	color: black;
+	padding: 0.5rem;
+	border: 1px solid orange;
+}
+
 /*** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***/
 @media screen and (max-width: 528px) and (min-width: 380px){
 /*	.card-image {
