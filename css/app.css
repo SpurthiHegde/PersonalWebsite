@@ -97,8 +97,9 @@ figure {
 #work-experience {
 	background-color: yellow;
 	text-align: center;
-	padding-top: 0.5rem;
-}
+	padding-top: 1.5rem;		/*changed to 1.5 so as to cover next page*/
+	padding-bottom: 3rem;
+}	
 
 #iner-container {
 	display: flex;
@@ -159,6 +160,11 @@ figure {
 }
 
 @media screen and (min-width: 529px) {
+	.row {
+		padding-top: 3rem;
+    	padding-bottom: 3rem;
+	}
+
 	.box {
 		display: flex;
 		flex-wrap: wrap;
@@ -180,6 +186,11 @@ figure {
 
 /*Media query to fix the spacing when greater tha 767px width & maintain the figure to summary ratio*/
 @media screen and (min-width: 768px) {
+	.row {
+		padding-top: 4rem;
+    	padding-bottom: 4rem;
+	}
+
 	#iner-container {
 		width: 90%;
     	left: 6%;
@@ -212,16 +223,20 @@ figure {
 	     line-height: 2; 
 	     padding-top: 1rem; 
 	     padding-left: 4rem;
+	     font-weight: bold;
+	}
+
+	#section-height {
+		padding: 2rem;
+		font-weight: bold;
 	}
 }
 
 @media screen and (min-width: 996px) {
-	.box {
-		display: flex;
-		flex-wrap: wrap;
-		height: 100%		/**The div did not take the complete height***/
-	}
 
+	.row {
+    	margin: 0 5rem 0 5rem;
+	}
 	img {
 		padding-top: 1rem;		/**After setting the box height to 100%, img was not aligned, hence padding-top provided***/
 	}
@@ -231,13 +246,19 @@ figure {
 	}
 
 	#summary-info {
-		padding-left: 1rem;
+		padding-left: 7rem;
+	}
+		.box {
+		padding-left: 0rem;		/*changed to 0 above 1200px*/
+	}
+	.roles {
+		font-size: 0.9rem;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.box {
-		padding-left: 3rem;
+		padding-left: 0rem;		/*changed to 0 above 1200px*/
 	}
 
 	img {
@@ -249,7 +270,8 @@ figure {
 	}
 
 	#section-height {
-		padding-left: 1rem;
+		font-size: 1rem;
+		padding:1.5rem;
 	}
 }
 
