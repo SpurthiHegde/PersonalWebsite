@@ -22,6 +22,7 @@ aquamarine: #02ccba
 /*** Navbar header font from google-fonts   ***/
 .headerfont {
 	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.2rem;		/*Not required for mobile devices*/
 }
 
 /*** Navbar toggle button boder C=color changed  ***/
@@ -102,21 +103,36 @@ figure {
 #iner-container {
 	display: flex;
     width: 100%;
-    padding: 1rem;
+    padding: 0 0.5rem 0 0.5rem;		/*changed the padding from 1rem to only left & right*/
+    position: relative;			/*Added to make the timeline absi=olute to the parent, else it was not positioning correctly*/
 }						/*Inner container height will be set based on the svg*/
 
 #exp-timeline-animation {
-	width: 20%;
+	position: absolute;
+    height: 100%;
+    width: 25%;
+    left: -20px;
+	/*width: 20%;*/
 	/*outline: solid 1px black;*/
-	text-align: right;			/*Align the vertical timeline to right with right padding of 1 rem*/
-    padding-right: 1rem;
+	/*text-align: right;		*/	/*Align the vertical timeline to right with right padding of 1 rem*/
+    padding-right: 0.5rem;		/*chnaged from 1rem to 0.5rem*/
 }
 
 #exp-details {
-	width: 80%;
+	width: 95%;
     /*outline: solid 1px black;*/
-    text-align: left;			/*Align the Experience details content to left with right padding of 1 rem*/
-    padding-left: 1rem;
+    /*text-align: left;*/			/*Align the Experience details content to left with right padding of 1 rem*/
+    /*padding-left: 1rem;*/
+    position: relative;
+    left: 7%;
+}
+
+.exp-header {
+	color: orange;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: 'David Libre', serif;
+    font-weight: bold;
 }
 
 #timeline {
@@ -127,9 +143,12 @@ figure {
 
 .roles {
 	list-style-type: square;
-    width: 85%;
+ /*   width: 85%;*/
     text-align: justify;
     font-family: 'David Libre', serif;
+    font-size: 0.85rem;
+    position: relative;
+    right:	20px;
 }
 /*** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***/
 @media screen and (max-width: 528px) and (min-width: 380px){
@@ -145,6 +164,10 @@ figure {
 		flex-wrap: wrap;
 	}
 
+	#exp-details {
+		width: 85%;
+		left: 10%;
+	}
 /*	#summary {
 		margin-left: 0;
 	}*/
@@ -156,7 +179,11 @@ figure {
 }
 
 /*Media query to fix the spacing when greater tha 767px width & maintain the figure to summary ratio*/
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
+	#iner-container {
+		width: 90%;
+    	left: 6%;
+	}
 	.right-shift {
 		padding-right: 3px;
 	}
