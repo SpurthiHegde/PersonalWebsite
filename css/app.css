@@ -22,7 +22,7 @@ aquamarine: #02ccba
 /*** Navbar header font from google-fonts   ***/
 .headerfont {
 	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 1.2rem;		/*Not required for mobile devices*/
+	/*font-size: 1.2rem;	*/	/*Not required for mobile devices*/
 }
 
 /*** Navbar toggle button boder C=color changed  ***/
