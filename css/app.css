@@ -128,13 +128,13 @@ figure {
 }
 
 .exp-header {
-	color: orange;
+	color: #856404;
     text-align: justify;
     font-weight: bold;
 }
 
 #timeline {
-	stroke: orange;
+	stroke: #856404;
 	stroke-width: 10;
 	stroke-dasharray: 1,1;
 }
