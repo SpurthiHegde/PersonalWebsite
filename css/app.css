@@ -35,9 +35,9 @@ main {
 }	
 
 .box {
-    -moz-box-shadow: 1px 1px 3px 1px #888888;
-  	-webkit-box-shadow: 1px 1px 3px 1px #888888;
-  	box-shadow: 5px 5px 5px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888;
+  	-webkit-box-shadow: 1px 1px 3px 1px #888;
+  	box-shadow: 5px 5px 5px #888;
     border: 0.5px solid orange;
 }
 
@@ -161,7 +161,7 @@ figure {
 
 .card {
 	margin-bottom: 4px;
-    box-shadow: 4px 4px 5px #888888;
+    box-shadow: 4px 4px 5px #888;
     border: 0.9px solid orange;
 }
 
@@ -248,7 +248,7 @@ figure {
 
 form {
 	color: black;
-	box-shadow: 3px 3px 5px #888888;
+	box-shadow: 3px 3px 5px #888;
     border: 0.5px solid orange;
     margin: 0 1rem 0 1rem;
 }
@@ -386,11 +386,7 @@ footer p {
 	.background-grad-color-contact {
 		margin: 0 8rem;
 	}
-/*			.card-image {
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-*/
+
 	.card-image {
 		width: 80%;
 	}
