@@ -21,7 +21,6 @@ grey: #868e96;
 /*** Navbar header font from google-fonts ***/
 .headerfont {	
 	font-family: 'Alegreya Sans', sans-serif;
-	/*font-size: 1.2rem;	*/			/*Not required for mobile devices*/
 }
 
 /*** Navbar toggle button boder color changed ***/
@@ -31,8 +30,18 @@ grey: #868e96;
 
 /*** Main Section Styling ***/
 main {
-	padding: 1rem 0 1rem 0;				/*Only bottom & top padding provided*/
+	padding: 1rem 0;				/*Only bottom & top padding provided*/
 }	
+
+.col-enhancement {
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 
 .box {
     -moz-box-shadow: 1px 1px 3px 1px #888;
@@ -57,12 +66,12 @@ figure {
 }
 
 /*In order to reduce the profile picture height*/
-#profile-pic {
+.profile-pic {
 	height: 35vh;
 }
 
 /*Adding negative margins to override the parent padding of 15px*/
-#summary {
+.summary {
 	margin-left: -15px;
     margin-right: -15px;
     text-align: center;
@@ -108,7 +117,7 @@ figure {
 #work-exp-iner-container {
 	display: flex;
     width: 100%;
-    padding: 0 0.5rem 0 0.5rem;		/*changed the padding from 1rem to only left & right*/
+    padding: 0 0.5rem;		/*changed the padding from 1rem to only left & right*/
     position: relative;				/*Added to make the timeline absolute to the parent, since it was not positioning correctly*/
 }									/*Inner container height will be set based on the svg*/
 
@@ -117,7 +126,6 @@ figure {
     height: 100%;
     width: 25%;
     left: -20px;
-	/*text-align: right;*/			/*Align the vertical timeline to right with right padding of 1 rem*/
     padding-right: 0.5rem;			/*Chnaged from 1rem to 0.5rem*/
 }
 
@@ -141,7 +149,6 @@ figure {
 
 .roles {
 	list-style-type: square;
- 	/* width: 85%;*/
     text-align: justify;
     font-size: 0.85rem;
     position: relative;
@@ -155,7 +162,6 @@ figure {
 }
 
 #inner-projects {
-	/*margin-top: 2rem;*/
 	margin-top: 1rem;
 }
 
@@ -169,8 +175,6 @@ figure {
 	padding: 1rem;
 	height: 100%;
 	width: 100%;
-/*	margin-left: 2rem;
-    margin-right: 2rem;*/
 }
 
 .card-title {
@@ -253,6 +257,11 @@ form {
     margin: 0 1rem 0 1rem;
 }
 
+.form-group {									/*Added on 12/26/2017 to provide padding in the mobile view*/
+	padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 label {
 	margin-bottom: 0;
 }
@@ -282,14 +291,12 @@ footer p {
 /*******************************Back to top style********************************************/
 /** TODO- Create scroll arrow effect to navigate to top of the page *****/
 .back-to-top {
-	/*display: inline;*/
 	background: none;
 	margin: 0; 
 	position: fixed;
 	bottom: 0.3rem;
 	right: 0;
 	width: 2rem;
-	/*height: 70px;*/
 	z-index: 100;
 	display: none;
 	text-decoration: none;
@@ -303,10 +310,6 @@ footer p {
 
 /******** Reponsive media Styles (Alignment for the Portfolio picture & summary using flex fields) ***************/
 @media screen and (max-width: 528px) and (min-width: 380px){
-/*	.card-image {
-    margin-left: 3rem;
-    margin-right: 3rem;
-}*/
 	.card-image {
 		width: 80%;
 	}

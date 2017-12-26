@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
 	<!-- Viewport meta tags using "width=device-width" cause the page to scale down to fit content that overflows the viewport bounds.You can override this behavior by adding "shrink-to-fit=no". The added value will prevent the page from scaling to fit the viewport. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Extra meta info added -->
+	<meta name="description" content="Personal Portfolio - Spurthi Hegde">
+  	<meta name="keywords" content="personal resume,cv,portfolio,software engineer">
+  	<meta name="author" content="Spurthi Hegde">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/app.css">
   	<script src="https://use.fontawesome.com/745c6bd7f0.js"></script>
@@ -46,13 +50,14 @@
 			<section id="protfolio-first-half" class="col-md-6 right-shift bottom-shift">
 				<!-- Inner Div added to allow spacing between the 2 equally divided grid -->
 				<!-- Box class used to handle the flex behaviour -->
-				<div class="col-md-12 box">
+				<!-- <div class="row"> -->
+				<div class="col-enhancement box">
 					<!-- Responsive images to be picked on DPI -->
 					<figure>
-						<img id="profile-pic" src="./img/spurthi_250.jpg" 
+						<img class="profile-pic" src="./img/spurthi_250.jpg" 
 	     		 			srcset="./img/spurthi_250.jpg 1x,./img/spurthi_300.jpg 1.5x," alt="profile picture"> 
 					</figure>
-					<article id="summary" class="orange-background-grad-color">
+					<article class="summary orange-background-grad-color">
 						<ul id="summary-info" class="general-font">
 				        	<li><i class="fa fa-female" aria-hidden="true"></i> Spurthi Hegde</li>
 				          	<li><i class="fa fa-phone" aria-hidden="true"></i> +971-50-8787952</li>
@@ -61,11 +66,12 @@
 				          	<li><i class="fa fa-calendar" aria-hidden="true"></i> 29/10/1991</li>
 				        </ul>
 					</article>
-				</div>			
+				</div>
+				<!-- </div>			 -->
 			</section>
 
 			<section id="protfolio-second-half" class="col-md-6 left-shift top-shift">
-				<div id="about-me" class="general-font col-md-12 box">
+				<div id="about-me" class="general-font col-enhancement box">
 					<p><br>Hey there..<br><br>My name is Spurthi Hegde, born &amp; bought up in India, currently based out of Dubai. <br> After my Bachelor's in Computer Science Engineering, I have been working for around 3 plus years now. Lately, I have been in love with Web Technologies! And this portfolio website is a by product of my learnings. <br><br> Optimistic &amp; dream to build or even be able to contribute to disruptive technologies which ultimately help the mankind.
 					</p>
 				</div>
@@ -124,7 +130,9 @@
 
 	<!-- The projects completed space in the below section. Each article allocated for a project -->
 	<section id="projects-section">
-		<h5 class="headerfont">Projects</h5>
+		<header class="projects">
+			<h5 class="headerfont">Projects</h5>
+		</header>
 		<div id="inner-projects">
 			<article class="card project1 right-mar-card">
 				<a href="https://github.com/SpurthiHegde/MoviesTrailer-Website" target="_blank">
@@ -155,17 +163,17 @@
 	<h5 class="headerfont" id="contactme">Contact Me</h5>
 	<section class="contact">
 		<form class="headerfont background-grad-color-contact">
-		    <div class="form-group col-md-12">
-		    	<label id="email" for="inputEmail">Email address</label>
-		    	<input type="email" class="form-control" id="inputEmail" aria-describedby="email" placeholder="Enter email">
-		    </div>
-		   <div class="form-group col-md-12">
-			    <label for="messageTextarea">Message</label>
-			    <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Enter your Message here.."></textarea>
-			</div>
-			<div class="form-group col-md-12">
-				<button type="submit" class="btn btn-warning">Submit</button>
-			</div>
+			    <div class="form-group">
+			    	<label id="email" for="inputEmail">Email address</label>
+			    	<input type="email" class="form-control" id="inputEmail" aria-describedby="email" placeholder="Enter email">
+			    </div>
+			   <div class="form-group">
+				    <label for="messageTextarea">Message</label>
+				    <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Enter your Message here.."></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-warning">Submit</button>
+				</div>
 		</form>
 	</section>
 	<!-- Main content ends here -->
@@ -187,7 +195,9 @@
 	</a>
 
 	<!-- Bootstrap requires the following Jquery, bootsrap.mim.js & popper.min.js links -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="./js/jquery-3.2.1.min.js"></script>			<!-- Added for fallback -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   	<script src="./js/app.js"></script>
